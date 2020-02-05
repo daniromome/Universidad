@@ -1,0 +1,7 @@
+<h2>Informacion del Alumno</h2>
+
+<div *ngIf="alumno">
+  <h3>{{ alumno.name }}</h3>
+  <h4 *ngIf="alumno.promedio">{{ alumno.promedio}}</h4>
+  <p>Calificaciones</p>
+</div>

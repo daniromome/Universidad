@@ -1,0 +1,11 @@
+<h2>Lista de Alumnos</h2>
+<div *ngFor="let alumno of Alumnos">
+  <h3>
+    <a [title]="'informacion de ' + alumno.name" [routerLink]="['/alumno/', alumno.id]" >
+      {{ alumno.name }}
+    </a>
+  </h3>
+  <p *ngIf="alumno.promedio">
+    Promedio: {{alumno.promedio}}
+  </p>
+</div>

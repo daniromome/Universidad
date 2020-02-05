@@ -1,0 +1,8 @@
+<h2>Lista de Alumnos</h2>
+<div *ngFor="let alumno of AlumnosJson | async">
+  <h3>
+    <a [title]="'informacion de ' + alumno.name" [routerLink]="['/alumnojson/', alumno.id]" >
+      {{ alumno.name }}
+    </a>
+  </h3>
+</div>

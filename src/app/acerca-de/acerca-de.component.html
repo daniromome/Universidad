@@ -1,0 +1,5 @@
+<ngb-toast *ngIf="show" header="Clickea mi botón para cerrar →" [autohide]="false"
+  (hide)="close()">
+  Si me cierras, reapareceré dentro de unos pocos segundos!
+</ngb-toast>
+<p *ngIf="!show">En seguida vuelvo!</p>
