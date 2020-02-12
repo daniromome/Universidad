@@ -38,7 +38,7 @@ import { InfoAlumnoJsonComponent } from './info-alumno-json/info-alumno-json.com
       { path: '', component : InicioComponent},
       { path: 'alumnos', component : ListaDeAlumnosComponent},
       { path: 'alumnosjson', component : ListaDeAlumnosJsonComponent},
-      { path: 'alumnojson/:alumnoId', component : InfoAlumnoComponent},
+      { path: 'alumnojson/:alumnoId', component : InfoAlumnoJsonComponent},
       { path: 'alumno/:alumnoId', component : InfoAlumnoComponent},
       { path: 'info', component : AcercaDeComponent},
     ])

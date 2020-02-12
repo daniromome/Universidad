@@ -10,17 +10,19 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class InfoAlumnoJsonComponent implements OnInit {
 
-  Alumno;
+  Alumnos;
+  id;
 
   constructor(
-    private Alumnos: AlumnDataService,
+    private alumnos: AlumnDataService,
     private route: ActivatedRoute
   ) { }
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
-      this.Alumno = this.Alumnos[+params.get('alumnoId')];
+      this.id = params.get('alumnoId');
     });
+    this.Alumnos = this.alumnos.getAlumnos();
   }
 
 }
